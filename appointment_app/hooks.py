@@ -1,9 +1,9 @@
 from . import __version__ as app_version
 
 app_name = "appointment_app"
-app_title = "Appointment application"
-app_publisher = "Osama alyahyawy"
-app_description = "Appointment "
+app_title = "Appointment_app"
+app_publisher = "OSama alyahyawy"
+app_description = "Appointment_app"
 app_email = "o@o.o"
 app_license = "MIT"
 

@@ -9,8 +9,8 @@ from appointment_app import __version__ as version
 setup(
 	name="appointment_app",
 	version=version,
-	description="Appointment ",
-	author="Osama alyahyawy",
+	description="Appointment_app",
+	author="OSama alyahyawy",
 	author_email="o@o.o",
 	packages=find_packages(),
 	zip_safe=False,

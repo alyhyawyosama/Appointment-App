@@ -1,6 +1,6 @@
-## Appointment application
+## Appointment_app
 
-Appointment 
+Appointment_app
 
 #### License
 
