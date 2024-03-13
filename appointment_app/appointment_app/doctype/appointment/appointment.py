@@ -29,6 +29,7 @@ class Appointment(Document):
 
 		q.append("queue", {"appointment": self.name, "status": "Pending"})
 		q.save(ignore_permissions=True)	
+		return len(q.queue)
  
  
  # def after_insert(self):
