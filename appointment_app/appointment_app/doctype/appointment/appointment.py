@@ -7,7 +7,12 @@ from frappe.model.document import Document
 class Appointment(Document):
 	def after_insert(self):
 		self.queue_number = self.add_to_appointment_queue()
+
+		frappe.cache().set_value("queue_number", self.queue_number)		
 		self.save(ignore_permissions=True)
+
+		
+  
 
 	def add_to_appointment_queue(self):
 		filters = {
