@@ -113,23 +113,12 @@ app_license = "MIT"
 # Scheduled Tasks
 # ---------------
 
-# scheduler_events = {
-#	"all": [
-#		"appointment_app.tasks.all"
-#	],
-#	"daily": [
-#		"appointment_app.tasks.daily"
-#	],
-#	"hourly": [
-#		"appointment_app.tasks.hourly"
-#	],
-#	"weekly": [
-#		"appointment_app.tasks.weekly"
-#	],
-#	"monthly": [
-#		"appointment_app.tasks.monthly"
-#	],
-# }
+scheduler_events = {
+	
+	"daily": [
+		"appointments_app.appointments_app.doctype.appointment_queue.appointment_queue.create_queues_for_today"
+    ],
+}
 
 # Testing
 # -------
