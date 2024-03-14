@@ -13,6 +13,7 @@
   "contact_number",
   "address",
   "is_published",
+  "doctor_in",
   "route"
  ],
  "fields": [
@@ -48,13 +49,24 @@
    "label": "Doctor",
    "options": "Doctor",
    "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "doctor_in",
+   "fieldtype": "Check",
+   "label": "Doctor In"
   }
  ],
  "has_web_view": 1,
  "index_web_pages_for_search": 1,
  "is_published_field": "is_published",
- "links": [],
- "modified": "2024-03-12 02:25:20.494725",
+ "links": [
+  {
+   "link_doctype": "Schedule Shift",
+   "link_fieldname": "clinic"
+  }
+ ],
+ "modified": "2024-03-15 01:04:08.084334",
  "modified_by": "Administrator",
  "module": "Appointment_app",
  "name": "Clinic",
